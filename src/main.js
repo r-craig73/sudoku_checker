@@ -8,7 +8,8 @@ $(document).ready(function() {
   $("#submit").submit(function(event) {
     var storeRow = [];
 
-    storeRow = document.getElementsByClassName("cell").val();
+    cells = document.getElementsByClassName("cell");
+    cells.map
     console.log(storeRow);
     event.preventDefault();
 

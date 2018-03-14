@@ -38,9 +38,9 @@ describe('Solution', function() {
     expect(solution.checkUnit(1)).toEqual(true);
   });
 
-  // it('every condition, specifications listed above, should have all numbers from 1 to 9 with no repeats', function() {
-  //   expect(notSolution.checkAll()).toEqual(false);
-  //   expect(solution.checkAll()).toEqual(true);
-  // });
+  it('every condition, specifications listed above, should have all numbers from 1 to 9 with no repeats', function() {
+    expect(notSolution.checkAll()).toEqual(false);
+    expect(solution.checkAll()).toEqual(true);
+  });
 
 });

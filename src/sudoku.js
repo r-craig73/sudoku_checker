@@ -32,24 +32,24 @@ Solution.prototype.checkUnit = function(unitIndex) {
   return result;
 };
 
-// Solution.prototype.checkAll = function() {
-//   var j;
-//   for (j = 0; j < 9; j++) {
-//     console.log(this.grid[0]);
-//     if ((this.checkUnit(j)) === false) {
-//       console.log("unit " + j);
-//       return false;
-//     } else if ((this.checkRow(j)) === false) {
-//       console.log("row " + j);
-//       return false;
-//     } else if ((this.checkColumn(j)) === false) {
-//       console.log("column " + j);
-//       return false;
-//     } else if (j === 8) {
-//       return true;
-//     }
-//   }
-// };
+Solution.prototype.checkAll = function() {
+  var j;
+  for (j = 0; j < 9; j++) {
+    console.log(this.grid[0]);
+    if ((this.checkUnit(j)) === false) {
+      console.log("unit " + j);
+      return false;
+    } else if ((this.checkRow(j)) === false) {
+      console.log("row " + j);
+      return false;
+    } else if ((this.checkColumn(j)) === false) {
+      console.log("column " + j);
+      return false;
+    } else if (j === 8) {
+      return true;
+    }
+  }
+};
 
 
 var arrayCompare = function(arr1, arr2) {
